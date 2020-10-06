@@ -7,11 +7,11 @@ const Posts = (props) => {
 
   return (
     <div className='posts-container-wrapper'>
-      {posts.map((posts, index) => {
+      {posts.map(postsObj => {
         return (
           <Post 
-            key={index}
-            post={posts}
+            key={postsObj.id}
+            post={postsObj}
             likePost={likePost}
           />
         )
